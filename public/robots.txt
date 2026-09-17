@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Interim live URL — update to the permanent custom domain once attached.
+Sitemap: https://rholuck-service-site.onrender.com/sitemap.xml

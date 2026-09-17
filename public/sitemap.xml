@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Interim sitemap using the live Render URL. Swap <loc> for the permanent
+  custom domain once one is attached (e.g. www.rholuckng.com), then
+  update robots.txt's Sitemap: line and index.html's canonical/og:url to match.
+  This is a single-page site, so there is one entry for the homepage.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rholuck-service-site.onrender.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

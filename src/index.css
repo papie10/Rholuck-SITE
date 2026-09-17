@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* Aligned with the Rholuck Group brand system: steel-blue primary,
+     copper-bronze accent, Space Grotesk display / Inter body / IBM Plex Mono data */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-navy-950: #101a2e;
+  --color-navy-900: #1b2a47;
+  --color-navy-800: #223255;
+  --color-navy-700: #2c4263;
+  --color-steel-600: #5a6172;
+  --color-steel-400: #8890a0;
+  --color-steel-200: #e5e6e0;
+  --color-paper-50: #fafaf8;
+  --color-paper-100: #f1f1ed;
+  --color-amber-500: #a8763e;
+  --color-amber-400: #c08f52;
+  --color-amber-600: #7d5a2e;
+  --color-signal-600: #c1442b;
+  --color-signal-500: #d85436;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper-50);
+  color: var(--color-navy-900);
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--color-amber-500);
+  color: var(--color-navy-950);
+}
+
+.hazard-rule {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-amber-500),
+    var(--color-amber-500) 10px,
+    var(--color-navy-950) 10px,
+    var(--color-navy-950) 20px
+  );
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
